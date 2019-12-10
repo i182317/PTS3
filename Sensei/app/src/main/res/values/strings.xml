@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PTS3</string>
+    <string name="choixmode">- Choix du mode -</string>
+    <string name="arashi">Arashi</string>
+    <string name="shizukana">Shizukana</string>
+    <string name="choixplateau">- Choix du plateau -</string>
+    <string name="plateau1">Plateau 1</string>
+    <string name="plateau2">Plateau 2</string>
 </resources>
