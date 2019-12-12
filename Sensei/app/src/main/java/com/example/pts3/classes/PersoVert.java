@@ -1,5 +1,6 @@
 package com.example.pts3.classes;
 
+import android.app.Activity;
 import android.widget.ImageView;
 
 import com.example.pts3.R;
@@ -11,11 +12,11 @@ class PersoVert implements IPerso {
     private ImageView img;
     private char drawable = 'V';
 
-    public PersoVert(Game_Activity activity) {
+    public PersoVert(Activity activity) {
         super();
 
         img = new ImageView(activity);
-        img.setBackgroundResource(R.drawable.perso_vert);
+        img.setBackgroundResource(R.drawable.zilean);
     }
 
     @Override

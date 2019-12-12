@@ -3,6 +3,7 @@ package com.example.pts3.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.app.Activity;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,10 +23,14 @@ import java.util.List;
 
 public class Game_Activity extends AppCompatActivity {
 
-    public Game_Activity activity;
+    private Activity activity;
     private ConstraintLayout fenetrePrincipale;
-    public LinearLayout aff;
-    public Point size;
+    private LinearLayout aff;
+
+    private LinearLayout layout_information_red;
+    private LinearLayout layout_information_green;
+
+    private Point size;
     private Handler myHandler;
     private Game game;
     private boolean plateau_set = false;
@@ -40,7 +45,7 @@ public class Game_Activity extends AppCompatActivity {
             if(!plateau_set) size.set(fenetrePrincipale.getWidth(), fenetrePrincipale.getHeight());
 
             if(!plateau_set && size.x != 0 && size.y != 0) {
-                game.getPlateau().setPlateau();
+                game.getPlateau().setPlateau(size);
                 plateau_set = true;
             }
 
@@ -59,9 +64,12 @@ public class Game_Activity extends AppCompatActivity {
 
         activity = this;
 
-        fenetrePrincipale = (ConstraintLayout) findViewById(R.id.fenetrePrincipale);
+        fenetrePrincipale = findViewById(R.id.fenetrePrincipale);
 
-        aff = (LinearLayout) findViewById(R.id.aff);
+        aff = findViewById(R.id.aff);
+
+        layout_information_red = findViewById(R.id.layout_information_red);
+        layout_information_green = findViewById(R.id.layout_information_green);
 
         size = new Point();
 
@@ -125,16 +133,33 @@ public class Game_Activity extends AppCompatActivity {
                     click_corect_coord = null;
                 }
                 game.haveWinner();
-                game.antiJeu();
-                if(!game.playerCanPlay()) game.nextTurn();
+                if(!game.playerCanPlay()) {
+                    game.nextTurn();
+                    game.antiJeu();
+                }
                 game.drawPlateau(click_corect_coord);
+
+                if(game.isTurnRed()) {
+                    layout_information_green.setBackgroundColor(getResources().getColor(R.color.grey));
+                    layout_information_red.setBackgroundColor(getResources().getColor(R.color.red));
+                }
+                else {
+                    layout_information_green.setBackgroundColor(getResources().getColor(R.color.green));
+                    layout_information_red.setBackgroundColor(getResources().getColor(R.color.grey));
+                }
             }
+
+
             return  true;
         }
     };
 
     private void launch(Game game) {
         game.drawPlateau(null);
+    }
+
+    public Point getSize() {
+        return size;
     }
 
     @Override

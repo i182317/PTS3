@@ -1,6 +1,8 @@
 package com.example.pts3.classes;
 
+import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -25,13 +27,13 @@ public class Plateau {
 
     private int size_per_tuile;
 
-    private Game_Activity activity;
+    private Activity activity;
 
     private List<ImageView> list_image_case;
 
     private RelativeLayout draw_plateau;
 
-    public Plateau(int sizeX, int sizeY, Game_Activity activity, LinearLayout aff) {
+    public Plateau(int sizeX, int sizeY, Activity activity, LinearLayout aff) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
         this.activity = activity;
@@ -45,8 +47,8 @@ public class Plateau {
         this.plateau[x][y] = piece;
     }
 
-    public void setPlateau() {
-        this.size_per_tuile = activity.size.x / sizeX;
+    public void setPlateau(Point size) {
+        this.size_per_tuile = size.x / sizeX;
 
         draw_plateau = new RelativeLayout(activity);
 
@@ -86,7 +88,7 @@ public class Plateau {
             }
         }
 
-        aff.addView(draw_plateau);
+        aff.addView(draw_plateau, 1);
     }
 
     private void setPosTuile() {
