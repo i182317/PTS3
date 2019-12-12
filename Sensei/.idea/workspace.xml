@@ -10,19 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf85c5a1-bf94-4b9b-b5f5-d209279fc425" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Mode_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Mode_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Plateau_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Plateau_Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mode_activity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_plateau_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_plateau_.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Mode_Activity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+              <caret column="34" selection-start-column="34" selection-end-column="34" />
               <folding>
                 <element signature="e#934#1186#0" expanded="true" />
                 <element signature="e#1185#1186#0" expanded="true" />
@@ -93,12 +81,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+            <state relative-caret-position="476">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#XmlEditor#0;class#XmlEditor#0" />
                 <element signature="method#read#0;class#XmlEditor#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Plateau#0;class#Plateau#0" />
+                <element signature="method#setPlateau#0;class#Plateau#0" />
+                <element signature="method#setPosTuile#0;class#Plateau#0" />
+                <element signature="method#drawPlateau#0;class#Plateau#0" />
+                <element signature="e#5318#5319#0" expanded="true" />
+                <element signature="e#5348#5349#0" expanded="true" />
+                <element signature="e#5377#5378#0" expanded="true" />
+                <element signature="e#5405#5406#0" expanded="true" />
+                <element signature="e#5434#5435#0" expanded="true" />
+                <element signature="e#5462#5463#0" expanded="true" />
+                <element signature="method#correctCoord#0;class#Plateau#0" />
+                <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
+                <element signature="method#getCoordMoov#0;class#Plateau#0" />
+                <element signature="method#getCoordMoovPlayer#0;class#Plateau#0" />
+                <element signature="method#getCoordMoovTuile#0;class#Plateau#0" />
+                <element signature="method#getCoordMoovTuileDirection#0;class#Plateau#0" />
+                <element signature="method#coordInPlateau#0;class#Plateau#0" />
+                <element signature="method#getWinner#0;class#Plateau#0" />
+                <element signature="e#11510#11511#0" expanded="true" />
+                <element signature="e#11569#11570#0" expanded="true" />
+                <element signature="method#getAntiJeu#0;class#Plateau#0" />
+                <element signature="method#antiJeuPerso#0;class#Plateau#0" />
+                <element signature="method#getCoord#0;class#Plateau#0" />
+                <element signature="method#click_in_plateau#0;class#Plateau#0" />
+                <element signature="method#get_coord_click#0;class#Plateau#0" />
               </folding>
             </state>
           </provider>
@@ -142,6 +167,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -540,41 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="423" selection-start-line="423" selection-end-line="423" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Plateau#0;class#Plateau#0" />
-            <element signature="method#setPlateau#0;class#Plateau#0" />
-            <element signature="method#setPosTuile#0;class#Plateau#0" />
-            <element signature="method#drawPlateau#0;class#Plateau#0" />
-            <element signature="e#5318#5319#0" expanded="true" />
-            <element signature="e#5348#5349#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#5405#5406#0" expanded="true" />
-            <element signature="e#5434#5435#0" expanded="true" />
-            <element signature="e#5462#5463#0" expanded="true" />
-            <element signature="method#correctCoord#0;class#Plateau#0" />
-            <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
-            <element signature="method#getCoordMoov#0;class#Plateau#0" />
-            <element signature="method#getCoordMoovPlayer#0;class#Plateau#0" />
-            <element signature="method#getCoordMoovTuile#0;class#Plateau#0" />
-            <element signature="method#getCoordMoovTuileDirection#0;class#Plateau#0" />
-            <element signature="method#coordInPlateau#0;class#Plateau#0" />
-            <element signature="method#getWinner#0;class#Plateau#0" />
-            <element signature="e#11510#11511#0" expanded="true" />
-            <element signature="e#11569#11570#0" expanded="true" />
-            <element signature="method#getAntiJeu#0;class#Plateau#0" />
-            <element signature="method#antiJeuPerso#0;class#Plateau#0" />
-            <element signature="method#getCoord#0;class#Plateau#0" />
-            <element signature="method#click_in_plateau#0;class#Plateau#0" />
-            <element signature="method#get_coord_click#0;class#Plateau#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/plateaux.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -653,7 +644,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Mode_Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
           <folding>
             <element signature="e#934#1186#0" expanded="true" />
             <element signature="e#1185#1186#0" expanded="true" />
@@ -666,12 +657,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+        <state relative-caret-position="476">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#XmlEditor#0;class#XmlEditor#0" />
             <element signature="method#read#0;class#XmlEditor#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Plateau#0;class#Plateau#0" />
+            <element signature="method#setPlateau#0;class#Plateau#0" />
+            <element signature="method#setPosTuile#0;class#Plateau#0" />
+            <element signature="method#drawPlateau#0;class#Plateau#0" />
+            <element signature="e#5318#5319#0" expanded="true" />
+            <element signature="e#5348#5349#0" expanded="true" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#5405#5406#0" expanded="true" />
+            <element signature="e#5434#5435#0" expanded="true" />
+            <element signature="e#5462#5463#0" expanded="true" />
+            <element signature="method#correctCoord#0;class#Plateau#0" />
+            <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
+            <element signature="method#getCoordMoov#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovPlayer#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovTuile#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovTuileDirection#0;class#Plateau#0" />
+            <element signature="method#coordInPlateau#0;class#Plateau#0" />
+            <element signature="method#getWinner#0;class#Plateau#0" />
+            <element signature="e#11510#11511#0" expanded="true" />
+            <element signature="e#11569#11570#0" expanded="true" />
+            <element signature="method#getAntiJeu#0;class#Plateau#0" />
+            <element signature="method#antiJeuPerso#0;class#Plateau#0" />
+            <element signature="method#getCoord#0;class#Plateau#0" />
+            <element signature="method#click_in_plateau#0;class#Plateau#0" />
+            <element signature="method#get_coord_click#0;class#Plateau#0" />
           </folding>
         </state>
       </provider>
