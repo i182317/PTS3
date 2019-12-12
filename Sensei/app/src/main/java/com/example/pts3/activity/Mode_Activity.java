@@ -20,27 +20,36 @@ public class Mode_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mode_activity);
+        setContentView(R.layout.activity_mode);
 
         this.mode_activity = this;
 
         // Initialisation des buttons
-        this.buttonArashi = (Button) findViewById(R.id.buttonArashi);
-        this.buttonShizukana = (Button) findViewById(R.id.buttonShizukana);
+        this.buttonArashi = findViewById(R.id.buttonArashi);
+        this.buttonShizukana = findViewById(R.id.buttonShizukana);
 
+        // Ajout d'un onClickListener sur le bouton Arashi
         this.buttonArashi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // le mode selectionné est le mode Arashi(1)
+                gameMode = 1;
                 Intent intent = new Intent(mode_activity, Plateau_Activity.class);
+                intent.putExtra("gameMode", gameMode);
                 mode_activity.startActivity(intent);
+                mode_activity.finish();
             }
         });
 
         this.buttonShizukana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // le mode selectionné est le mode Shizukana(2)
+                gameMode = 2;
                 Intent intent = new Intent(mode_activity, Plateau_Activity.class);
+                intent.putExtra("gameMode", gameMode);
                 mode_activity.startActivity(intent);
+                mode_activity.finish();
             }
         });
 
