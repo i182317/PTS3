@@ -3,6 +3,7 @@ package com.example.pts3.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +13,8 @@ import android.widget.LinearLayout;
 
 import com.example.pts3.R;
 import com.example.pts3.classes.Game;
+import com.example.pts3.classes.PersoRouge;
+import com.example.pts3.classes.PersoVert;
 import com.example.pts3.classes.Plateau;
 import com.example.pts3.classes.XmlEditor;
 
@@ -126,6 +129,33 @@ public class Game_Activity extends AppCompatActivity {
                 }
                 game.haveWinner();
                 game.antiJeu();
+                if(game.getWinner() instanceof PersoVert){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("test",true);
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+                if(game.getWinner() instanceof PersoRouge){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("test",false);
+                    activity.startActivity(intentreplay);
+
+                    finish();
+                }
+
+                if(game.getAntiJeu() instanceof  PersoRouge){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("test",true);
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+                if(game.getAntiJeu() instanceof  PersoVert){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("test",false);
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+
                 if(!game.playerCanPlay()) game.nextTurn();
                 game.drawPlateau(click_corect_coord);
             }
