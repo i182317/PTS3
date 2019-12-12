@@ -1,13 +1,14 @@
 package com.example.pts3.classes;
 
-import com.example.pts3.activity.Game_Activity;
+import android.app.Activity;
+
 import com.example.pts3.interfaces.IPerso;
 
 import java.util.List;
 
 public class Game {
 
-    private final Game_Activity activity;
+    private final Activity activity;
     private Plateau plateau;
     private Tour tour;
     private boolean regleAntiJeu;
@@ -15,7 +16,7 @@ public class Game {
     private IPerso winner = null;
     private IPerso antiJeu = null;
 
-    public Game(Plateau plateau, boolean regleAntiJeu, boolean modeArashi, Game_Activity activity) {
+    public Game(Plateau plateau, boolean regleAntiJeu, boolean modeArashi, Activity activity) {
         this.plateau = plateau;
         this.regleAntiJeu = regleAntiJeu;
         this.modeArashi = modeArashi;

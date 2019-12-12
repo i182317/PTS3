@@ -1,5 +1,6 @@
 package com.example.pts3.classes;
 
+import android.app.Activity;
 import android.widget.ImageView;
 
 import com.example.pts3.R;
@@ -8,12 +9,12 @@ import com.example.pts3.interfaces.IPerso;
 
 public class TuileVert extends Tuile {
 
-    private Game_Activity activity;
+    private Activity activity;
     private PersoVert persoVert = null;
 
     private ImageView image;
 
-    public TuileVert(Game_Activity activity) {
+    public TuileVert(Activity activity) {
         super();
         this.persoVert = null;
         this.activity = activity;
