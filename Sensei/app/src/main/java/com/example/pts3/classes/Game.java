@@ -9,7 +9,7 @@ public class Game {
 
     private final Game_Activity activity;
     private Plateau plateau;
-    private Tour tour = null;
+    private Tour tour;
     private boolean regleAntiJeu;
     private boolean modeArashi;
     private IPerso winner = null;

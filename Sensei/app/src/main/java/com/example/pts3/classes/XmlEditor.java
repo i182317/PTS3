@@ -1,5 +1,6 @@
 package com.example.pts3.classes;
 
+import android.app.Activity;
 import android.widget.LinearLayout;
 
 import com.example.pts3.activity.Game_Activity;
@@ -19,9 +20,9 @@ public class XmlEditor {
 
     private final LinearLayout aff;
     private String filename ;
-    private Game_Activity activity;
+    private Activity activity;
 
-    public XmlEditor(String filename, Game_Activity activity, LinearLayout aff)  {
+    public XmlEditor(String filename, Activity activity, LinearLayout aff)  {
         super();
         this.filename = filename ;
         this.activity = activity;
