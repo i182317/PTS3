@@ -131,13 +131,13 @@ public class Game_Activity extends AppCompatActivity {
                 game.antiJeu();
                 if(game.getWinner() instanceof PersoVert){
                     Intent intentreplay = new Intent(activity,EndGame_Activity.class);
-                    intentreplay.putExtra("test",true);
+                    intentreplay.putExtra("Win","Vert");
                     activity.startActivity(intentreplay);
                     finish();
                 }
                 if(game.getWinner() instanceof PersoRouge){
                     Intent intentreplay = new Intent(activity,EndGame_Activity.class);
-                    intentreplay.putExtra("test",false);
+                    intentreplay.putExtra("Win","Rouge");
                     activity.startActivity(intentreplay);
 
                     finish();
@@ -145,13 +145,13 @@ public class Game_Activity extends AppCompatActivity {
 
                 if(game.getAntiJeu() instanceof  PersoRouge){
                     Intent intentreplay = new Intent(activity,EndGame_Activity.class);
-                    intentreplay.putExtra("test",true);
+                    intentreplay.putExtra("Win","VertAntiJeu");
                     activity.startActivity(intentreplay);
                     finish();
                 }
                 if(game.getAntiJeu() instanceof  PersoVert){
                     Intent intentreplay = new Intent(activity,EndGame_Activity.class);
-                    intentreplay.putExtra("test",false);
+                    intentreplay.putExtra("Win","RougeAntiJeu");
                     activity.startActivity(intentreplay);
                     finish();
                 }

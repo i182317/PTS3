@@ -16,8 +16,8 @@ import com.example.pts3.R;
 
 public class EndGame_Activity extends AppCompatActivity {
     public TextView textJ1,textJ2;
-    private ImageView imageViewReplay;
-    private boolean test;
+    private ImageView imageViewReplay,imageViewMenu;
+    private String Win;
     private int screenWidth;
     private int screenHeight;
     private ConstraintLayout screenReplay;
@@ -32,13 +32,19 @@ public class EndGame_Activity extends AppCompatActivity {
         screenReplay=(ConstraintLayout) findViewById(R.id.screenReplay);
         endGame_activity=this;
         Intent intent = getIntent();
-        test=intent.getBooleanExtra("test",false);
-        if(test){
-            textJ1.setText("J1 WIN");
-            textJ2.setText("J2 LOOSE");
-        }else {
-            textJ2.setText("J2 WIN");
-            textJ1.setText("J1 LOOSE");
+        Win=intent.getStringExtra("Win");
+        if(Win.equals("Vert")){
+            textJ1.setText("Vert WIN");
+            textJ2.setText("Rouge LOOSE");
+        }else if(Win=="Rouge"){
+            textJ2.setText("Rouge WIN");
+            textJ1.setText("Vert LOOSE");
+        }else if(Win=="VertAntiJeu"){
+            textJ1.setText("Vert WIN par Anti Jeu");
+            textJ2.setText("Rouge LOOSE par Anti Jeu");
+        }else if(Win=="RougetAntiJeu"){
+            textJ2.setText("Rouge WIN par Anti Jeu");
+            textJ1.setText("Vert LOOSE par Anti Jeu");
         }
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -47,15 +53,20 @@ public class EndGame_Activity extends AppCompatActivity {
         screenHeight = size.y;
 
         imageViewReplay = new ImageView(this);
-        imageViewReplay.setX(screenWidth/2);
-        imageViewReplay.setY(screenHeight/2);
-        imageViewReplay.setMaxWidth(screenWidth/4);
-        imageViewReplay.setMaxHeight(screenHeight/4);
-        imageViewReplay.setBackgroundResource(R.drawable.perso_rouge);
-        ViewGroup.LayoutParams replay = new ViewGroup.LayoutParams(screenWidth/6,screenHeight/12);
+        imageViewReplay.setX(screenWidth/2-(screenWidth/4)/2);
+        imageViewReplay.setY(screenHeight/2-(screenHeight/8));
+        imageViewReplay.setBackgroundResource(R.drawable.test);
+        ViewGroup.LayoutParams replay = new ViewGroup.LayoutParams(screenWidth/4,screenHeight/8);
         imageViewReplay.setLayoutParams(replay);
-
         screenReplay.addView(imageViewReplay);
+
+        imageViewMenu = new ImageView(this);
+        imageViewMenu.setX(screenWidth/2-(screenWidth/4)/2);
+        imageViewMenu.setY(screenHeight/2+(screenHeight/8));
+        imageViewMenu.setBackgroundResource(R.drawable.test);
+        ViewGroup.LayoutParams menu = new ViewGroup.LayoutParams(screenWidth/4,screenHeight/8);
+        imageViewMenu.setLayoutParams(menu);
+        screenReplay.addView(imageViewMenu);
 
         testTouchListener();
 
@@ -71,5 +82,20 @@ public class EndGame_Activity extends AppCompatActivity {
                         finish();
                     }
                 });
+    }
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        View decorView = getWindow().getDecorView();
+
+        if(hasFocus) {
+            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                    | View.SYSTEM_UI_FLAG_IMMERSIVE);
+        }
     }
 }
