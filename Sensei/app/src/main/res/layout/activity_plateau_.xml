@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="@+id/editText" />
 
     <Button
-        android:id="@+id/buttonArashi"
+        android:id="@+id/buttonPlateau1"
         android:layout_width="190dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
@@ -57,19 +57,5 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/buttonShizukana"
-        android:layout_width="190dp"
-        android:layout_height="80dp"
-        android:text="@string/plateau2"
-        android:textStyle="bold"
-        android:textColor="#E6E9DCB6"
-        android:textSize="25sp"
-        android:background="@drawable/borderbutton"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/buttonArashi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
