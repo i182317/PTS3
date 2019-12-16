@@ -3,7 +3,11 @@ package com.example.pts3.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+<<<<<<< HEAD
 import android.app.Activity;
+=======
+import android.content.Intent;
+>>>>>>> leo
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +17,8 @@ import android.widget.LinearLayout;
 
 import com.example.pts3.R;
 import com.example.pts3.classes.Game;
+import com.example.pts3.classes.PersoRouge;
+import com.example.pts3.classes.PersoVert;
 import com.example.pts3.classes.Plateau;
 import com.example.pts3.classes.XmlEditor;
 
@@ -133,10 +139,42 @@ public class Game_Activity extends AppCompatActivity {
                     click_corect_coord = null;
                 }
                 game.haveWinner();
+<<<<<<< HEAD
                 if(!game.playerCanPlay()) {
                     game.nextTurn();
                     game.antiJeu();
                 }
+=======
+                game.antiJeu();
+                if(game.getWinner() instanceof PersoVert){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("Win","Vert");
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+                if(game.getWinner() instanceof PersoRouge){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("Win","Rouge");
+                    activity.startActivity(intentreplay);
+
+                    finish();
+                }
+
+                if(game.getAntiJeu() instanceof  PersoRouge){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("Win","VertAntiJeu");
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+                if(game.getAntiJeu() instanceof  PersoVert){
+                    Intent intentreplay = new Intent(activity,EndGame_Activity.class);
+                    intentreplay.putExtra("Win","RougeAntiJeu");
+                    activity.startActivity(intentreplay);
+                    finish();
+                }
+
+                if(!game.playerCanPlay()) game.nextTurn();
+>>>>>>> leo
                 game.drawPlateau(click_corect_coord);
 
                 if(game.isTurnRed()) {

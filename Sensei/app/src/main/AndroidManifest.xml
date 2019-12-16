@@ -8,12 +8,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
         <activity android:name=".activity.Plateau_Activity"></activity>
         <activity android:name=".activity.Mode_Activity">
+=======
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".activity.EndGame_Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.Game_Activity"
+            android:screenOrientation="portrait">
+>>>>>>> leo
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

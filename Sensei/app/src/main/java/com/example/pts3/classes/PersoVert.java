@@ -7,7 +7,7 @@ import com.example.pts3.R;
 import com.example.pts3.activity.Game_Activity;
 import com.example.pts3.interfaces.IPerso;
 
-class PersoVert implements IPerso {
+public class PersoVert implements IPerso {
 
     private ImageView img;
     private char drawable = 'V';
