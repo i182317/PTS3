@@ -206,12 +206,12 @@ public class Plateau {
         return ret;
     }
 
-    public List<int[]> getCoordMoov(int[] coord, Tour tour, boolean modeArashi) {
+    public List<int[]> getCoordMoov(int[] coord, Tour tour, int mode) {
         List<int[]> coordMoov = null;
         ITuile tuile = (ITuile) plateau[coord[0]][coord[1]];
 
         if(tuile.getPerso() == null && tour.getRestDpTuile() > 0) {
-            coordMoov = this.getCoordMoovTuile(coord, modeArashi);
+            coordMoov = this.getCoordMoovTuile(coord, mode);
         }
         else if(tuile.getPerso() != null && tour.getRestDpPlayer() > 0){
             coordMoov = this.getCoordMoovPlayer(coord, tour.isTurnRed());
@@ -265,14 +265,14 @@ public class Plateau {
         return res;
     }
 
-    private List<int[]> getCoordMoovTuile(int[] coord, boolean modeArashi) {
+    private List<int[]> getCoordMoovTuile(int[] coord, int mode) {
         List<int[]> res = new ArrayList<int[]>();
 
         for(int i = -1; i < 2; i++) {
             for(int j = -1; j < 2; j++) {
 
                 if(Math.abs(i) != Math.abs(j)) {
-                    if(modeArashi) {
+                    if(mode == 1) {
                         int[] rep = this.getCoordMoovTuileDirection(coord, i, j);
                         if(rep != null) res.add(rep);
                     }

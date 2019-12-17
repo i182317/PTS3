@@ -21,11 +21,15 @@ import org.jdom2.JDOMException;
 import java.io.IOException;
 import java.util.List;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class Game_Activity extends AppCompatActivity {
 
     private Activity activity;
     private ConstraintLayout fenetrePrincipale;
+
     private LinearLayout aff;
+    private LinearLayout anim;
 
     private LinearLayout layout_information_red;
     private LinearLayout layout_information_green;
@@ -37,7 +41,7 @@ public class Game_Activity extends AppCompatActivity {
 
     private int num_plateau = 1;
     private boolean regleAntiJeu = true;
-    private boolean modeArashi = false;
+    private int mode = 3;
 
     public Runnable myRunnable = new Runnable() {
         @Override
@@ -67,6 +71,7 @@ public class Game_Activity extends AppCompatActivity {
         fenetrePrincipale = findViewById(R.id.fenetrePrincipale);
 
         aff = findViewById(R.id.aff);
+        anim = findViewById(R.id.anim);
 
         layout_information_red = findViewById(R.id.layout_information_red);
         layout_information_green = findViewById(R.id.layout_information_green);
@@ -81,7 +86,7 @@ public class Game_Activity extends AppCompatActivity {
             listPlateau = xml.read();
             p = listPlateau.get(num_plateau);
 
-            game = new Game(p, regleAntiJeu, modeArashi, activity);
+            game = new Game(p, regleAntiJeu, mode, activity);
 
             System.out.println("fin onCreate");
         }
@@ -91,6 +96,10 @@ public class Game_Activity extends AppCompatActivity {
         catch (IOException i) {
             finishActivity(-1);
         }
+
+        GifImageView gif = new GifImageView(activity);
+        gif.setBackgroundResource(R.drawable.gif_1);
+        anim.addView(gif);
 
         myHandler = new Handler();
 
@@ -109,23 +118,33 @@ public class Game_Activity extends AppCompatActivity {
                 if(game.getPlateau().click_in_plateau(event)) {
                     int[] coord_click = game.getPlateau().get_coord_click(event);
 
-                    if(click_corect_coord == null) {
-                        System.out.println(coord_click[0] + "  " + coord_click[1]);
-                        if (game.correctCoord(coord_click)) {
-                            System.out.println("correct coord");
-                            click_corect_coord = game.getCoordMoov(coord_click);
-                        }
-                        click_coord = coord_click.clone();
-                    }
-                    else {
-                        for(int[] coordWantMoov : click_corect_coord) {
-                            if(coord_click[0] == coordWantMoov[0] && coord_click[1] == coordWantMoov[1]) {
-                                game.moov(click_coord, coordWantMoov);
-                            }
-                        }
+                    boolean goodClickForTuto = false;
 
-                        click_coord = null;
-                        click_corect_coord = null;
+                    if(mode == 3) {
+
+                        if(coord_click[0] == 0 && coord_click[1] == 0) goodClickForTuto = true; // TODO: vérifie que le clique est au bon endroit par rapport au tuto
+                    }
+                    if(mode < 3 || (mode == 3 && goodClickForTuto)) {
+
+                        if(mode == 3) // TODO: increment du fil du tuto
+
+                        if (click_corect_coord == null) {
+                            System.out.println(coord_click[0] + "  " + coord_click[1]);
+                            if (game.correctCoord(coord_click)) {
+                                System.out.println("correct coord");
+                                click_corect_coord = game.getCoordMoov(coord_click);
+                            }
+                            click_coord = coord_click.clone();
+                        } else {
+                            for (int[] coordWantMoov : click_corect_coord) {
+                                if (coord_click[0] == coordWantMoov[0] && coord_click[1] == coordWantMoov[1]) {
+                                    game.moov(click_coord, coordWantMoov);
+                                }
+                            }
+
+                            click_coord = null;
+                            click_corect_coord = null;
+                        }
                     }
                 }
                 else {
@@ -156,10 +175,6 @@ public class Game_Activity extends AppCompatActivity {
 
     private void launch(Game game) {
         game.drawPlateau(null);
-    }
-
-    public Point getSize() {
-        return size;
     }
 
     @Override

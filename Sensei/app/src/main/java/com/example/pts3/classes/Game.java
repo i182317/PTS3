@@ -12,14 +12,14 @@ public class Game {
     private Plateau plateau;
     private Tour tour;
     private boolean regleAntiJeu;
-    private boolean modeArashi;
+    private int mode;
     private IPerso winner = null;
     private IPerso antiJeu = null;
 
-    public Game(Plateau plateau, boolean regleAntiJeu, boolean modeArashi, Activity activity) {
+    public Game(Plateau plateau, boolean regleAntiJeu, int mode, Activity activity) {
         this.plateau = plateau;
         this.regleAntiJeu = regleAntiJeu;
-        this.modeArashi = modeArashi;
+        this.mode = mode;
         this.tour = new Tour(true);
         this.activity = activity;
     }
@@ -32,8 +32,8 @@ public class Game {
         return regleAntiJeu;
     }
 
-    public boolean isModeArashi() {
-        return modeArashi;
+    public int isModeArashi() {
+        return mode;
     }
 
     public Tour getTour() {
@@ -65,7 +65,7 @@ public class Game {
     }
 
     public List<int[]> getCoordMoov(int[] coord) {
-        return plateau.getCoordMoov(coord, tour, modeArashi);
+        return plateau.getCoordMoov(coord, tour, mode);
     }
 
     public void nextTurn() {
