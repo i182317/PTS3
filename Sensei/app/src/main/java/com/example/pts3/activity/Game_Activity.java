@@ -41,7 +41,7 @@ public class Game_Activity extends AppCompatActivity {
 
     private int num_plateau = 1;
     private boolean regleAntiJeu = true;
-    private int mode = 3;
+    private int mode = 1;
 
     public Runnable myRunnable = new Runnable() {
         @Override
@@ -122,11 +122,11 @@ public class Game_Activity extends AppCompatActivity {
 
                     if(mode == 3) {
 
-                        if(coord_click[0] == 0 && coord_click[1] == 0) goodClickForTuto = true; // TODO: vérifie que le clique est au bon endroit par rapport au tuto
+                        if(coord_click[0] == 0 && coord_click[1] == 0) goodClickForTuto = true; // ODO: vérifie que le clique est au bon endroit par rapport au tuto
                     }
                     if(mode < 3 || (mode == 3 && goodClickForTuto)) {
-
-                        if(mode == 3) // TODO: increment du fil du tuto
+                        System.out.println("click");
+                        //if(mode == 3) // ODO: increment du fil du tuto
 
                         if (click_corect_coord == null) {
                             System.out.println(coord_click[0] + "  " + coord_click[1]);
