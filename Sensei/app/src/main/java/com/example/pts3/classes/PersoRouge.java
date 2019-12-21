@@ -8,7 +8,7 @@ import com.example.pts3.activity.Game_Activity;
 import com.example.pts3.interfaces.IPerso;
 import com.example.pts3.interfaces.IPiece;
 
-class PersoRouge implements IPerso {
+public class PersoRouge implements IPerso {
 
     private ImageView img;
     private char drawable = 'R';
