@@ -19,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Plateau_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Plateau_Activity.java" afterDir="false" />
@@ -33,6 +34,12 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/EndGame_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/EndGame_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_end_game_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_end_game_.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java" afterDir="false" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
     </list>
 >>>>>>> leo
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,6 +65,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
@@ -83,11 +91,23 @@
               <folding>
                 <element signature="imports" expanded="true" />
 >>>>>>> leo
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3077#5638#0" expanded="true" />
+                <element signature="e#5637#5638#0" expanded="true" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
@@ -227,17 +247,50 @@
                 <element signature="method#correctCoord#0;class#Plateau#0" />
                 <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
                 <element signature="method#getCoordMoov#0;class#Plateau#0" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#1517#1518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="267" column="65" selection-start-line="267" selection-start-column="65" selection-end-line="267" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setPosTuile#0;class#Plateau#0" />
+                <element signature="method#drawPlateau#0;class#Plateau#0" />
+                <element signature="method#correctCoord#0;class#Plateau#0" />
+                <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
                 <element signature="method#getCoordMoovPlayer#0;class#Plateau#0" />
                 <element signature="method#getCoordMoovTuile#0;class#Plateau#0" />
                 <element signature="method#getCoordMoovTuileDirection#0;class#Plateau#0" />
                 <element signature="method#coordInPlateau#0;class#Plateau#0" />
+<<<<<<< HEAD
                 <element signature="e#11510#11511#0" expanded="true" />
                 <element signature="e#11569#11570#0" expanded="true" />
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
                 <element signature="method#getAntiJeu#0;class#Plateau#0" />
                 <element signature="method#antiJeuPerso#0;class#Plateau#0" />
                 <element signature="method#getCoord#0;class#Plateau#0" />
                 <element signature="method#click_in_plateau#0;class#Plateau#0" />
+<<<<<<< HEAD
                 <element signature="method#get_coord_click#0;class#Plateau#0" />
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
               </folding>
 >>>>>>> leo
             </state>
@@ -255,6 +308,7 @@
               <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
 =======
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/src/main/assets/plateaux.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="765">
@@ -264,6 +318,13 @@
                 <element signature="e#1612#2581#0" />
               </folding>
 >>>>>>> leo
+=======
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
             </state>
           </provider>
         </entry>
@@ -312,13 +373,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/GifImageView.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Game.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoRouge.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoVert.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/TuileRouge.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/TuileVert.java" />
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoVert.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/TuileRouge.java" />
@@ -329,6 +389,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Game.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoRouge.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Gif.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Game.java" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -351,21 +417,26 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1050" />
+    <option name="x" value="760" />
+    <option name="y" value="-20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
 =======
 >>>>>>> leo
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -397,16 +468,22 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="pts3" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PTS3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="pts3" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+              <item name="PTS3" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+<<<<<<< HEAD
               <item name="PTS3" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
 <<<<<<< HEAD
@@ -440,12 +517,20 @@
               <item name="Sensei" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
 =======
+=======
+              <item name="PTS3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sensei" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
             </path>
             <path>
-              <item name="PTS3" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="PTS3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sensei" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PTS3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sensei" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="PTS3" type="1abcf292:AndroidViewProjectNode" />
@@ -459,10 +544,13 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
 >>>>>>> leo
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
       <pane id="Scope" />
     </panes>
   </component>
@@ -481,11 +569,14 @@
   </component>
   <component name="RecentsManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <key name="android.template.packageName">
       <recent name="com.example.pts3.activity" />
     </key>
 >>>>>>> leo
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.pts3.classes" />
     </key>
@@ -597,10 +688,14 @@
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18255034" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17919463" />
 >>>>>>> leo
+=======
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18255034" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -608,16 +703,26 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3569405" />
+=======
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.13456091" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.45184135" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.056657225" />
       <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+=======
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3385269" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
       <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
 =======
       <window_info anchor="bottom" id="Build" order="7" weight="0.17705382" />
@@ -707,12 +812,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/plateaux.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -732,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/S3/PTS3/Sensei/app/src/main/java/com/example/pts3/activity/Game_Activity.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -747,6 +845,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -791,6 +890,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Obstacle.java">
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/interfaces/ITuile.java">
@@ -801,27 +902,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoRouge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoVert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Tour.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -877,7 +959,7 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="119">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
 =======
@@ -980,6 +1062,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/XmlEditor.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="612">
           <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
 =======
@@ -991,12 +1074,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="145" column="61" lean-forward="true" selection-start-line="145" selection-start-column="61" selection-end-line="145" selection-end-column="61" />
+=======
+        <state relative-caret-position="238">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoRouge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/PersoVert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/test.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1009,10 +1117,40 @@
             <element signature="imports" expanded="true" />
             <element signature="e#729#730#0" expanded="true" />
             <element signature="e#758#759#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/view/GifImageView.java" />
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Gif.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Plateau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="267" column="65" selection-start-line="267" selection-start-column="65" selection-end-line="267" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setPosTuile#0;class#Plateau#0" />
+            <element signature="method#drawPlateau#0;class#Plateau#0" />
+            <element signature="method#correctCoord#0;class#Plateau#0" />
+            <element signature="method#moovCoordToCoord#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovPlayer#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovTuile#0;class#Plateau#0" />
+            <element signature="method#getCoordMoovTuileDirection#0;class#Plateau#0" />
+            <element signature="method#coordInPlateau#0;class#Plateau#0" />
+            <element signature="method#getAntiJeu#0;class#Plateau#0" />
+            <element signature="method#antiJeuPerso#0;class#Plateau#0" />
+            <element signature="method#getCoord#0;class#Plateau#0" />
+            <element signature="method#click_in_plateau#0;class#Plateau#0" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1043,10 +1181,21 @@
             <element signature="e#583#584#0" expanded="true" />
             <element signature="e#632#633#0" expanded="true" />
             <element signature="e#658#659#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/classes/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#1517#1518#0" expanded="true" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1110,6 +1259,24 @@
           <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
           <folding>
             <element signature="method#onWindowFocusChanged#0;class#Mode_Activity#0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/pts3/activity/Game_Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="128" column="26" selection-start-line="128" selection-start-column="26" selection-end-line="128" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3077#5638#0" expanded="true" />
+            <element signature="e#5637#5638#0" expanded="true" />
+>>>>>>> 3c0d4db52232d5b14eca89eac187d804c0acf019
           </folding>
         </state>
       </provider>
